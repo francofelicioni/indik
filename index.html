@@ -4,71 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INDIK | WEAR ART</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
+    <title>INDIK. | Wear Art</title>
 
     //Fonts
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
+    //Icons
+    <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    /> -->
+    />
+    //Bootstrap
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    //CSS Stylesheet
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
-      <div class="container">
-        <img class="logo" src="img/logo.png" alt="" />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span><i id="bar" class="fas fa-bars"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shop.html">Modelos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-            <!-- <li class="nav-item">
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+          <img class="logo" src="img/logo.png" alt="" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span><i id="bar" class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#clothes">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <!-- <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
             </li> -->
-            <!-- <li class="nav-item">
+              <!-- <li class="nav-item">
               <i class="fal fa-search"></i>
               <i
                 onclick="window.location.href='cart.html';"
                 class="fal fa-shopping-bag"
               ></i>
             </li> -->
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <section id="home">
       <div class="container">
@@ -77,7 +82,7 @@
           <span>Wear</span> art <span>Wear</span> art <span>Wear</span> art
         </h1>
         <p>We create unique, hand-painted and unrepeatable pieces.</p>
-        <button>See Models</button>
+        <button class="button-main">See Models</button>
       </div>
     </section>
 
@@ -127,7 +132,7 @@
 
     <section id="new" class="w-100">
       <h3>EACH PIECE IS UNIQUE</h3>
-      <div class="container text-center mt-5 py-5">
+      <div class="container text-center mt-5 py-5 section-container">
         <hr class="mx-auto" />
         <p>Blank canvas - Design - Transformation</p>
       </div>
@@ -163,6 +168,9 @@
         </div>
         <div class="process-img-container">
           <img class="img-fluid" src="img/process/3.jpg" alt="" />
+        </div>
+        <div class="process-img-container">
+          <img class="img-fluid" src="img/process/4.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -237,15 +245,52 @@
       </div>
     </section> -->
 
+    <section id="about" class="my-5">
+      <h3>ABOUT US</h3>
+      <div class="container text-center mt-5 py-5 section-container">
+        <hr class="mx-auto" />
+        <p>Two friends - A life together - Mutual inspiration</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <p class="about-text">
+          <span class="about-name"> Damian Armando Dreise </span>, born in the
+          city of Buenos Aires in the 80s. He began to take his first artistic
+          steps as a child, standing out for his skill with the pencil. In his
+          adolescence, he underwent a gender metamorphosis, a duality that would
+          be reflected in his art in later years.
+        </p>
+        <img class="about-img" src="./img/about/1.jpeg" alt="" />
+        <p class="about-text">
+          The need to externalise this internal change led him to take up the
+          paintbrush for the first time, to express openly on canvas his
+          experiences, existential doubts and most visceral feelings. Completely
+          self-taught, he begins a process full of solitude, observation,
+          learning and understanding, from which intense, intimidating and
+          profound works emerge. This dark stage of self-knowledge came to an
+          end with the appearance of light and colour in its maximum expression.
+          His work includes oils, acrylics, watercolours and digital designs
+          faithful to his essence and his very particular aesthetics. Today we
+          present an open-minded tour through a selection of works that invite
+          us to release preconceptions, to let ourselves be carried away by the
+          irrationality of madness.
+        </p>
+        <img class="about-img" src="./img/about/2.jpeg" alt="" />
+      </div>
+    </section>
+
     <section id="clothes" class="my-5">
       <h3>ITAMBY MIMBI</h3>
-      <div class="container text-center mt-5 py-5">
+      <div class="container text-center mt-5 py-5 section-container">
         <hr class="mx-auto" />
         <p>Painted by hand - 100% premium quality - Unique clothes</p>
       </div>
       <div class="row mx-auto container-fluid">
         <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/product/6.jpg" alt="" />
+          <img
+            class="img-fluid mb-3 product-img"
+            src="img/product/6.jpg"
+            alt=""
+          />
           <!-- <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -258,7 +303,11 @@
           <button class="buy-btn">Order</button>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/product/7.jpg" alt="" />
+          <img
+            class="img-fluid mb-3 product-img"
+            src="img/product/7.jpg"
+            alt=""
+          />
           <!-- <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -271,7 +320,11 @@
           <button class="buy-btn">Order</button>
         </div>
         <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/product/8.jpg" alt="" />
+          <img
+            class="img-fluid mb-3 product-img"
+            src="img/product/8.jpg"
+            alt=""
+          />
           <!-- <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -286,137 +339,24 @@
       </div>
     </section>
 
-    <!-- <section id="watches" class="my-5">
-      <div class="container text-center mt-5 py-5">
-        <h3>Best Watches</h3>
+    <section id="contact" class="my-5">
+      <h3>CONTACT US</h3>
+      <div class="container text-center mt-5 py-5 section-container">
         <hr class="mx-auto" />
-        <p>Here you can check out our new products with fair price on rymo.</p>
+        <p>We make it easy - Send us a message - With just one click</p>
       </div>
       <div class="row mx-auto container-fluid">
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/watches/1.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/watches/2.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/watches/3.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/watches/1.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
+       
       </div>
-    </section> -->
-
-    <!-- <section id="shoes" class="my-5 pb-5">
-      <div class="container text-center mt-5 py-5">
-        <h3>Running Shoes</h3>
-        <hr class="mx-auto" />
-        <p>Here you can check out our new products with fair price on rymo.</p>
-      </div>
-      <div class="row mx-auto container-fluid">
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/shoes/8.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/shoes/7.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/shoes/6.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/shoes/5.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-      </div>
-    </section> -->
+    </section>
 
     <footer class="mt-5 py-5">
       <div class="row container mx-auto pt-5">
         <div class="footer-one col-lg-3 col-md-6 col-12">
           <img class="footer-logo" src="img/logo2.png" alt="" />
           <p class="pt-3">
-            Somos una marca joven, que nace inspirada en la transformación de
-            las personas.
+            We are a brand that was born inspired by the transformation of
+            people. All our clothes are hand painted, unique and unrepeatable.
           </p>
         </div>
         <div class="footer-one col-lg-3 col-md-6 col-12 mb-3 footer-links">
@@ -428,10 +368,10 @@
           </ul>
         </div>
         <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
-          <h5 class="pb-2">Contacto</h5>
+          <!-- <h5 class="pb-2">Contact</h5> -->
           <div>
             <h6 class="text-uppercase">BASED IN</h6>
-            <p>Palma de Mallorca, España.</p>
+            <p>Palma de Mallorca, Spain.</p>
           </div>
           <div>
             <h6 class="text-uppercase">Phone</h6>
@@ -444,7 +384,8 @@
         </div>
 
         <div class="footer-one col-lg-3 col-md-6 col-12">
-          <h5 class="pb-2">Instagram</h5>
+          <h5>FOLLOW US ON INSTAGRAM</h5>
+
           <div class="row">
             <img
               class="img-fluid w-25 h-100 m-2"
@@ -472,13 +413,15 @@
               alt=""
             />
           </div>
+
+          <h6>@indik.ik</h6>
         </div>
       </div>
 
       <div class="copyright mt-5">
         <div class="row container mx-auto">
           <div class="col-lg-3 col-md-6 col-12 mb-4">
-            <img src="img/payment.png" alt="" />
+            <!-- <img src="img/payment.png" alt="" /> -->
           </div>
           <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
             <p>INDIK © 2023. All Rights Reserved</p>
@@ -502,5 +445,6 @@
       integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
