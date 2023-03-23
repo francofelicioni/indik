@@ -92,12 +92,28 @@
   height: 300px;
 }
 
-
-
 .icons-container {
-  justify-content: space-between;
+  justify-content: center;
+  margin: 4rem 0 !important;
 }
 
+.h1-main {
+  padding: .5rem 0 1rem 0;
+}
+
+.button-main {
+  margin-top: 1rem;
+}
+
+.section-container {
+  margin-top: 2rem !important;
+  padding: 1rem 0 !important;
+}
+
+
+.process {
+  justify-content: space-evenly;
+}
 
 // .p-process {
 //   margin-top: 1rem;
