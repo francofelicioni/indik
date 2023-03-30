@@ -26,10 +26,13 @@
   </head>
 
   <body>
-    <header>
-      <nav id="header" class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+    <header id="header">
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg navbar-light py-3 fixed-top"
+      >
         <div class="container">
-          <img class="logo" src="img/logo.png" alt="" />
+          <img class="logo" src="logo.png" alt="" />
           <button
             class="navbar-toggler"
             type="button"
@@ -55,16 +58,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
-              <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li> -->
-              <!-- <li class="nav-item">
-              <i class="fal fa-search"></i>
-              <i
-                onclick="window.location.href='cart.html';"
-                class="fal fa-shopping-bag"
-              ></i>
-            </li> -->
             </ul>
           </div>
         </div>
@@ -74,25 +67,14 @@
     <section id="home">
       <div class="container">
         <h5>MAKE ART GO WITH YOU EVERYWHERE</h5>
-        <h1 class="h1-main">
-          <span>Wear</span> art <span>Wear</span> art <span>Wear</span> art
-        </h1>
+        <h1 class="h1-main"><span>Wear</span> art <span>Wear</span> art</h1>
         <p>We create unique, hand-painted and unrepeatable pieces.</p>
-        <button class="button-main">See Models</button>
+        <a href="#clothes"><button class="button-main">See Models</button></a>
       </div>
     </section>
 
     <section id="brand" class="container">
       <div class="row m-0 py-5 icons-container">
-        <!-- <div class="quick-info">
-          <img
-            class="img-fluid col-lg-2 col-md-4 col-6"
-            src="/img/icons/1.png"
-            alt=""
-          />
-          <p>Made in Baleares</p>
-        </div> -->
-
         <img
           class="img-fluid col-lg-2 col-md-4 col-6"
           src="/img/icons/1.png"
@@ -113,16 +95,44 @@
           src="/img/icons/4.png"
           alt=""
         />
-        <!-- <img
-          class="img-fluid col-lg-2 col-md-4 col-6"
-          src="img/brand/5.png"
-          alt=""
-        />
-        <img
-          class="img-fluid col-lg-2 col-md-4 col-6"
-          src="img/brand/6.png"
-          alt=""
-        /> -->
+      </div>
+    </section>
+
+    <section id="about" class="my-5">
+      <h3>ABOUT US</h3>
+      <div class="container text-center mt-5 py-5 section-container">
+        <hr class="mx-auto" />
+        <p>Two friends - A life together - Mutual inspiration</p>
+      </div>
+      <div class="about-main-container">
+        <div class="about-container">
+          <p class="about-text">
+            <span class="about-name"> Damian Armando Dreise </span>, born in the
+            city of Buenos Aires in the 80s. He began to take his first artistic
+            steps as a child, standing out for his skill with the pencil. In his
+            adolescence, he underwent a gender metamorphosis, a duality that
+            would be reflected in his art in later years.The need to externalise
+            this internal change led him to take up the paintbrush for the first
+            time, to express openly on canvas his experiences, existential
+            doubts and most visceral feelings.
+          </p>
+          <img class="about-img" src="./img/about/1.jpeg" alt="" />
+        </div>
+        <div class="about-container flex-row-reverse">
+          <p class="about-text">
+            Completely self-taught, he begins a process full of solitude,
+            observation, learning and understanding, from which intense,
+            intimidating and profound works emerge. This dark stage of
+            self-knowledge came to an end with the appearance of light and
+            colour in its maximum expression. His work includes oils, acrylics,
+            watercolours and digital designs faithful to his essence and his
+            very particular aesthetics. Today we present an open-minded tour
+            through a selection of works that invite us to release
+            preconceptions, to let ourselves be carried away by the
+            irrationality of madness.
+          </p>
+          <img class="about-img" src="./img/about/2.jpeg" alt="" />
+        </div>
       </div>
     </section>
 
@@ -132,29 +142,6 @@
         <hr class="mx-auto" />
         <p>Blank canvas - Design - Transformation</p>
       </div>
-      <!-- <div class="row p-0 m-0">
-        <div class="one col-lg-4 col-md-12 col-12 p-0">
-          <img class="img-fluid" src="img/process/1.jpg" alt="" />
-          <div class="details">
-            <h2>LLEVÁ</h2>
-            <button class="text-uppercase">Shop now</button>
-          </div>
-        </div>
-        <div class="one col-lg-4 col-md-12 col-12 p-0">
-          <img class="img-fluid" src="img/process/2.jpg" alt="" />
-          <div class="details">
-            <h2>Awesome Blank Outfit</h2>
-            <button class="text-uppercase">Shop now</button>
-          </div>
-        </div>
-        <div class="one col-lg-4 col-md-12 col-12 p-0">
-          <img class="img-fluid" src="img/process/3.jpg" alt="" />
-          <div class="details">
-            <h2>Sportwear Up To 50% Off</h2>
-            <button class="text-uppercase">Shop now</button>
-          </div>
-        </div>
-      </div> -->
       <div class="process">
         <div class="process-img-container">
           <img class="img-fluid" src="img/process/1.jpg" alt="" />
@@ -171,108 +158,7 @@
       </div>
     </section>
 
-    <!-- <section id="featured" class="my-5 pb-5">
-      <div class="container text-center mt-5 py-5">
-        <h3>Our Featured</h3>
-        <hr class="mx-auto" />
-        <p>Here you can check out our new products with fair price on rymo.</p>
-      </div>
-      <div class="row mx-auto container-fluid">
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/featured/1.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/featured/2.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/featured/3.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product text-center col-lg-3 col-md-4 col-12">
-          <img class="img-fluid mb-3" src="img/featured/4.jpg" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Sport Boots</h5>
-          <h4 class="p-price">$92.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section id="banner" class="my-5 py-5">
-      <div class="container">
-        <h4>MID SEASON’S SALE</h4>
-        <h4>Autumn Collection<br />UP TO 20% OFF</h4>
-        <button class="text-uppercase">Shop Now</button>
-      </div>
-    </section> -->
-
-    <section id="about" class="my-5">
-      <h3>ABOUT US</h3>
-      <div class="container text-center mt-5 py-5 section-container">
-        <hr class="mx-auto" />
-        <p>Two friends - A life together - Mutual inspiration</p>
-      </div>
-      <div class="row mx-auto container-fluid">
-        <p class="about-text">
-          <span class="about-name"> Damian Armando Dreise </span>, born in the
-          city of Buenos Aires in the 80s. He began to take his first artistic
-          steps as a child, standing out for his skill with the pencil. In his
-          adolescence, he underwent a gender metamorphosis, a duality that would
-          be reflected in his art in later years.
-        </p>
-        <img class="about-img" src="./img/about/1.jpeg" alt="" />
-        <p class="about-text">
-          The need to externalise this internal change led him to take up the
-          paintbrush for the first time, to express openly on canvas his
-          experiences, existential doubts and most visceral feelings. Completely
-          self-taught, he begins a process full of solitude, observation,
-          learning and understanding, from which intense, intimidating and
-          profound works emerge. This dark stage of self-knowledge came to an
-          end with the appearance of light and colour in its maximum expression.
-          His work includes oils, acrylics, watercolours and digital designs
-          faithful to his essence and his very particular aesthetics. Today we
-          present an open-minded tour through a selection of works that invite
-          us to release preconceptions, to let ourselves be carried away by the
-          irrationality of madness.
-        </p>
-        <img class="about-img" src="./img/about/2.jpeg" alt="" />
-      </div>
-    </section>
+   
 
     <section id="clothes" class="my-5">
       <h3>ITAMBY MIMBI</h3>
@@ -344,38 +230,34 @@
       <div class="row mx-auto container-fluid">
         <form action="#" method="post">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-    
+          <input type="text" id="name" name="name" required />
+
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-    
+          <input type="email" id="email" name="email" required />
+
           <label for="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
-    
-          <input type="submit" value="Send Message">
+
+          <input type="submit" value="Send Message" />
         </form>
       </div>
     </section>
 
     <footer class="mt-5 py-5">
-      <div class="row container mx-auto pt-5">
+      <div id="footer" class="row container mx-auto pt-5">
         <div class="footer-one col-lg-3 col-md-6 col-12">
           <img class="footer-logo" src="img/logo2.png" alt="" />
           <p class="pt-3">
             We are a brand that was born inspired by the transformation of
             people. All our clothes are hand painted, unique and unrepeatable.
           </p>
-        </div>
-        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3 footer-links">
-          <!-- <h5 class="pb-2">Featured</h5> -->
-          <ul class="text-uppercase list-unstyled">
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="text-uppercase list-unstyled pt-3">
+            <li><a href="#clothes">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
-          <!-- <h5 class="pb-2">Contact</h5> -->
           <div>
             <h6 class="text-uppercase">BASED IN</h6>
             <p>Palma de Mallorca, Spain.</p>
