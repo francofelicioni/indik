@@ -1,6 +1,10 @@
+#navbar {
+  background-color: #0B141A;
+}
+
 .logo {
-  width: 220px;
-  height: 90px;
+  width: 120px;
+  height: 40px;
 }
 
 .star {
@@ -21,7 +25,7 @@
 
 .navbar-light .navbar-nav .nav-link {
   padding: 0 20px;
-  color: black;
+  color: white;
   transition: 0.3s ease;
 }
 
@@ -58,8 +62,13 @@
 
 #bar:hover,
 #bar.active {
-  color: #fff;
+  color: #fdc500;
 }
+
+
+
+
+
 
 @media only screen and (max-width: 991px) {
   body > nav > div > button:hover,

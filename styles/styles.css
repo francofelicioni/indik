@@ -51,9 +51,12 @@ hr {
   height: 2px;
   background-color: #fdc500; }
 
+#navbar {
+  background-color: #0B141A; }
+
 .logo {
-  width: 220px;
-  height: 90px; }
+  width: 120px;
+  height: 40px; }
 
 .star {
   padding: 10px 0; }
@@ -70,7 +73,7 @@ hr {
 
 .navbar-light .navbar-nav .nav-link {
   padding: 0 20px;
-  color: black;
+  color: white;
   transition: 0.3s ease; }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -101,7 +104,7 @@ hr {
 
 #bar:hover,
 #bar.active {
-  color: #fff; }
+  color: #fdc500; }
 
 @media only screen and (max-width: 991px) {
   body > nav > div > button:hover,
@@ -186,7 +189,8 @@ hr {
   text-align: end; }
 
 #new .process {
-  display: flex; }
+  display: flex;
+  margin: 0 4rem; }
 
 #new .process img {
   width: 300px;
@@ -209,10 +213,19 @@ hr {
 .process {
   justify-content: space-evenly; }
 
+.about-main-container {
+  margin: 1rem 200px; }
+
+.about-container {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center; }
+
 .about-text {
   margin: 1rem 0;
   padding: 0 4rem;
-  text-align: justify; }
+  text-align: justify;
+  width: 70%; }
 
 .about-img {
   display: inline-block;
@@ -304,7 +317,11 @@ label {
   margin-bottom: 5px; }
 
 footer {
-  background-color: #0B141A; }
+  background-color: #0b141a; }
+
+#footer {
+  display: flex;
+  justify-content: space-around; }
 
 .footer-logo {
   width: 120px; }
