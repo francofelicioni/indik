@@ -116,6 +116,26 @@
   justify-content: space-evenly;
 }
 
+.home-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .home-icons-container {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem  3rem 0 3rem;
+
+
+    .home-icon  {
+      width: 120px;
+    }
+
+  }
+
+
+}
+
 // .p-process {
 //   margin-top: 1rem;
 //   text-align: center;

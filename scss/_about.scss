@@ -21,3 +21,24 @@
   width: 200px;
 }
 
+.process-img-container:hover .img-fluid {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.process-img-container:hover .img-fluid-description {
+  transition: all 0.5s ease-in-out;
+  display: block;
+}
+.process-img-container {
+  overflow: hidden;
+}
+
+.img-fluid-description {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  padding-top: 2.5rem;
+  display: none;
+}
