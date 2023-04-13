@@ -44,7 +44,7 @@
           >
             <span><i id="bar" class="fas fa-bars"></i></span>
           </button>
-          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link active" href="#home">Home</a>
@@ -59,23 +59,23 @@
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-          </div> -->
+          </div>
 
-          <div class="nav-bar collapse navbar-collapse">
-          <nav class="nav-bar__container">
-            <ul class="nav-bar__ul">
-              <li><a href="./pages/about.html">About Us</a></li>
-              <li><a href="./pages/rooms.html">Rooms</a></li>
-              <li><a href="./pages/offers.html">Offers</a></li>
-              <li><a href="./pages/contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <label for="menu" class="nav-bar__burger-menu">
-            <span id="span1"></span>
-            <span id="span2"></span>
-            <span id="span3"></span>
-          </label>
-        </div>
+          <!-- <div class="nav-bar collapse navbar-collapse">
+            <nav class="nav-bar__container">
+              <ul class="nav-bar__ul">
+                <li><a href="./pages/about.html">About Us</a></li>
+                <li><a href="./pages/rooms.html">Rooms</a></li>
+                <li><a href="./pages/offers.html">Offers</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <label for="menu" class="nav-bar__burger-menu">
+              <span id="span1"></span>
+              <span id="span2"></span>
+              <span id="span3"></span>
+            </label>
+          </div> -->
         </div>
       </nav>
     </header>
@@ -90,31 +90,30 @@
     </section>
 
     <section id="brand" class="container">
-      <div class="row m-0 py-5 icons-container">
-        <img
-          class="img-fluid col-lg-2 col-md-4 col-6"
-          src="/img/icons/1.png"
-          alt=""
-        />
-        <img
-          class="img-fluid col-lg-2 col-md-4 col-6"
-          src="/img/icons/2.png"
-          alt=""
-        />
-        <img
-          class="img-fluid col-lg-2 col-md-4 col-6"
-          src="/img/icons/3.png"
-          alt=""
-        />
-        <img
-          class="img-fluid col-lg-2 col-md-4 col-6"
-          src="/img/icons/4.png"
-          alt=""
-        />
+      <div class="home-icons-container">
+        <div class="home-icons-container">
+          <img class="home-icon" src="/img/icons/1.png" alt="" />
+          <p>Based in Mallorca</p>
+        </div>
+
+        <div class="home-icons-container">
+          <img class="home-icon" src="/img/icons/2.png" alt="" />
+          <p>Worldwide Delivery</p>
+        </div>
+        <div class="home-icons-container">
+          <img class="home-icon" src="/img/icons/3.png" alt="" />
+          <p>Buy Easily</p>
+        </div>
+        <div class="home-icons-container">
+          <img class="home-icon" src="/img/icons/4.png" alt="" />
+          <p>Unique Clothes</p>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="my-5">
+    <!-- <section id="about" class="my-5"> -->
+    <section id="about">
+      <div class="line"></div>
       <h3>ABOUT US</h3>
       <div class="container text-center mt-5 py-5 section-container">
         <hr class="mx-auto" />
@@ -152,7 +151,9 @@
       </div>
     </section>
 
-    <section id="new" class="w-100">
+    <!-- <section id="new" class="w-100"> -->
+    <section id="new">
+      <div class="line"></div>
       <h3>EACH PIECE IS UNIQUE</h3>
       <div class="container text-center mt-5 py-5 section-container">
         <hr class="mx-auto" />
@@ -161,22 +162,26 @@
       <div class="process">
         <div class="process-img-container">
           <img class="img-fluid" src="img/process/1.jpg" alt="" />
+          <p class="img-fluid-description">DESIGN</p>
         </div>
         <div class="process-img-container">
           <img class="img-fluid" src="img/process/2.jpg" alt="" />
+          <p class="img-fluid-description">PAINTING</p>
         </div>
         <div class="process-img-container">
           <img class="img-fluid" src="img/process/3.jpg" alt="" />
+          <p class="img-fluid-description">DRYING</p>
         </div>
         <div class="process-img-container">
           <img class="img-fluid" src="img/process/4.jpg" alt="" />
+          <p class="img-fluid-description">RESULT</p>
         </div>
       </div>
     </section>
 
-   
-
-    <section id="clothes" class="my-5">
+    <!-- <section id="clothes" class="my-5"> -->
+    <section id="clothes">
+      <div class="line"></div>
       <h3>ITAMBY MIMBI</h3>
       <div class="container text-center mt-5 py-5 section-container">
         <hr class="mx-auto" />
@@ -237,7 +242,9 @@
       </div>
     </section>
 
-    <section id="contact" class="my-5">
+    <!-- <section id="contact" class="my-5"> -->
+    <section id="contact">
+      <div class="line"></div>
       <h3>CONTACT US</h3>
       <div class="container text-center mt-5 py-5 section-container">
         <hr class="mx-auto" />
@@ -329,13 +336,15 @@
             <!-- <img src="img/payment.png" alt="" /> -->
           </div>
           <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
-            <p>INDIK © 2023. All Rights Reserved</p>
+            <div id="footer-copyright">
+              <p>INDIK © 2023. All Rights Reserved</p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-12">
+          <!-- <div class="col-lg-4 col-md-6 col-12">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
