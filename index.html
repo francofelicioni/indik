@@ -8,13 +8,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
     <link
       rel="stylesheet"
@@ -42,7 +40,13 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span><i id="bar" class="fas fa-bars"></i></span>
+            <!-- <span><i id="bar" class="fas fa-bars"></i></span>
+             -->
+            <label for="menu" class="nav-bar__burger-menu">
+              <span id="span1"></span>
+              <span id="span2"></span>
+              <span id="span3"></span>
+            </label>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
@@ -83,14 +87,18 @@
     <section id="home">
       <div class="container">
         <h5>MAKE ART GO WITH YOU EVERYWHERE</h5>
-        <h1 class="h1-main"><span>Wear</span> art <span>Wear</span> art</h1>
+        <h1 class="h1-main">
+          <span>Take</span> art <span class="sm">with</span>
+          <span class="sm-brand">you</span>
+        </h1>
         <p>We create unique, hand-painted and unrepeatable pieces.</p>
         <a href="#clothes"><button class="button-main">See Models</button></a>
       </div>
     </section>
 
     <section id="brand" class="container">
-      <div class="home-icons-container">
+      <div class="home-icons">
+        <!-- <div> -->
         <div class="home-icons-container">
           <img class="home-icon" src="/img/icons/1.png" alt="" />
           <p>Based in Mallorca</p>
@@ -100,14 +108,18 @@
           <img class="home-icon" src="/img/icons/2.png" alt="" />
           <p>Worldwide Delivery</p>
         </div>
+        <!-- </div> -->
+        <!-- <div> -->
         <div class="home-icons-container">
           <img class="home-icon" src="/img/icons/3.png" alt="" />
           <p>Buy Easily</p>
         </div>
+
         <div class="home-icons-container">
           <img class="home-icon" src="/img/icons/4.png" alt="" />
           <p>Unique Clothes</p>
         </div>
+        <!-- </div> -->
       </div>
     </section>
 
@@ -115,12 +127,12 @@
     <section id="about">
       <div class="line"></div>
       <h3>ABOUT US</h3>
-      <div class="container text-center mt-5 py-5 section-container">
+      <div class="section-container">
         <hr class="mx-auto" />
         <p>Two friends - A life together - Mutual inspiration</p>
       </div>
       <div class="about-main-container">
-        <div class="about-container">
+        <div class="new">
           <p class="about-text">
             <span class="about-name"> Damian Armando Dreise </span>, born in the
             city of Buenos Aires in the 80s. He began to take his first artistic
@@ -133,7 +145,7 @@
           </p>
           <img class="about-img" src="./img/about/1.jpeg" alt="" />
         </div>
-        <div class="about-container flex-row-reverse">
+        <div class="new flex-row-reverse">
           <p class="about-text">
             Completely self-taught, he begins a process full of solitude,
             observation, learning and understanding, from which intense,
@@ -148,6 +160,19 @@
           </p>
           <img class="about-img" src="./img/about/2.jpeg" alt="" />
         </div>
+        <div class="new">
+          <p class="about-text">
+            <span class="about-name"> Damian Armando Dreise </span>Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Illum cupiditate
+            officiis autem mollitia expedita dolores quas! Sequi quis, earum
+            fugiat enim magni, ipsam veritatis aliquid adipisci blanditiis
+            tenetur illo doloremque!or sit amet consectetur adipisicing elit
+            officiis autem mollitia expedita dolores quas! Sequi quis, earum
+            fugiat enim magni, ipsam veritatis aliquid adipisci blanditiis
+            tenetur illo doloremque!
+          </p>
+          <img class="about-img" src="./img/about/1.jpeg" alt="" />
+        </div>
       </div>
     </section>
 
@@ -155,35 +180,59 @@
     <section id="new">
       <div class="line"></div>
       <h3>EACH PIECE IS UNIQUE</h3>
-      <div class="container text-center mt-5 py-5 section-container">
+      <div class="section-container">
         <hr class="mx-auto" />
         <p>Blank canvas - Design - Transformation</p>
       </div>
       <div class="process">
         <div class="process-img-container">
           <img class="img-fluid" src="img/process/1.jpg" alt="" />
-          <p class="img-fluid-description">DESIGN</p>
+          <p class="img-fluid-title">DESIGN</p>
+          <p class="img-fluid-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+            excepturi suscipit at sit, dolore pariatur magni nihil explicabo
+            consectetur blanditiis quod enim minus nisi qui ratione ad ex id?
+            Sapiente.
+          </p>
         </div>
         <div class="process-img-container">
           <img class="img-fluid" src="img/process/2.jpg" alt="" />
-          <p class="img-fluid-description">PAINTING</p>
+          <p class="img-fluid-title">PAINTING</p>
+          <p class="img-fluid-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+            excepturi suscipit at sit, dolore pariatur magni nihil explicabo
+            consectetur blanditiis quod enim minus nisi qui ratione ad ex id?
+            Sapiente.
+          </p>
         </div>
         <div class="process-img-container">
           <img class="img-fluid" src="img/process/3.jpg" alt="" />
-          <p class="img-fluid-description">DRYING</p>
+          <p class="img-fluid-title">DRYING</p>
+          <p class="img-fluid-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+            excepturi suscipit at sit, dolore pariatur magni nihil explicabo
+            consectetur blanditiis quod enim minus nisi qui ratione ad ex id?
+            Sapiente.
+          </p>
         </div>
         <div class="process-img-container">
           <img class="img-fluid" src="img/process/4.jpg" alt="" />
-          <p class="img-fluid-description">RESULT</p>
+          <p class="img-fluid-title">RESULT</p>
+          <p class="img-fluid-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+            excepturi suscipit at sit, dolore pariatur magni nihil explicabo
+            consectetur blanditiis quod enim minus nisi qui ratione ad ex id?
+            Sapiente.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- <section id="clothes" class="my-5"> -->
     <section id="clothes">
-      <div class="line"></div>
+      <div class="line-clothes"></div>
       <h3>ITAMBY MIMBI</h3>
-      <div class="container text-center mt-5 py-5 section-container">
+      <div class="section-container">
         <hr class="mx-auto" />
         <p>Painted by hand - 100% premium quality - Unique clothes</p>
       </div>
@@ -246,9 +295,9 @@
     <section id="contact">
       <div class="line"></div>
       <h3>CONTACT US</h3>
-      <div class="container text-center mt-5 py-5 section-container">
+      <div class="section-container">
         <hr class="mx-auto" />
-        <p>We make it easy - Send us a message - With just one click</p>
+        <p>We make it easy - Send us a message - With one click</p>
       </div>
       <div class="row mx-auto container-fluid">
         <form action="#" method="post">
