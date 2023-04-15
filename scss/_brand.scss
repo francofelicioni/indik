@@ -1,0 +1,33 @@
+.home-icons {
+  display: flex;
+  flex-direction: row;
+  .home-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin: 4rem 3rem 0 3rem;
+
+    .home-icons-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home-icon {
+      width: 120px;
+    }
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .home-icons {
+    flex-direction: column;
+    padding-top: 100px;
+    .home-icons-container {
+      flex-direction: column;
+      padding: 2rem 0;
+      // margin-top: -252px;
+    }
+  }
+}

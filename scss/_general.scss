@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 h1 {
@@ -64,7 +64,16 @@ hr {
 
 .line {
   border-top: 1px solid black;
-  height: .5px;
+  height: 0.5px;
   padding: 0;
   margin: 20px auto 50px auto;
+
+  &-clothes {
+    border: transparent;
+    margin: 100px 0;
+  }
+}
+
+.section-container {
+  text-align: center;
 }
