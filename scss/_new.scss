@@ -72,23 +72,20 @@
     text-align: end;
   }
 
-  .process img {
-    width: 300px;
-    height: 300px;
-  }
-
   .process {
     display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 150px;
+    justify-content: space-around;
+    padding-bottom: 200px;
 
     .process-img-container {
       transition: all 0.5s ease-in-out;
-      // overflow: hidden;
       margin: 1rem;
       position: relative;
-      height: 100%;
-      border-radius: 1px;
+
+      .img-fluid {
+        max-width: 280px;
+        max-height: 280px;
+      }
 
       .img-fluid-title {
         text-align: center;
@@ -98,15 +95,6 @@
         padding-top: 2.5rem;
         display: block;
       }
-
-      // .img-fluid-title {
-      //   text-align: center;
-      //   font-weight: bold;
-      //   font-size: 1.2rem;
-      //   letter-spacing: 1.5px;
-      //   padding-top: 2.5rem;
-      //   display: block;
-      // }
 
       .img-fluid-description {
         display: none;
@@ -121,57 +109,66 @@
         padding-top: 2.5rem;
       }
     }
+  }
 
-    .process-img-container:hover {
+  .process-img-container:hover {
+    transition: all 1s ease-in-out;
+
+    .img-fluid {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
       transition: all 1s ease-in-out;
-
-      .img-fluid {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-        transition: all 1s ease-in-out;
-      }
-
-      .img-fluid-title {
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.2rem;
-        letter-spacing: 1.5px;
-        padding-top: 2.5rem;
-        display: none;
-      }
-
-      .img-fluid-description {
-        display: block;
-        transition: all 1s ease-in-out;
-      }
     }
 
-    // .process {
-    //   justify-content: space-evenly;
-    // }
+    .img-fluid-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      letter-spacing: 1.5px;
+      padding-top: 2.5rem;
+      display: none;
+    }
+
+    .img-fluid-description {
+      display: block;
+      transition: all 1s ease-in-out;
+    }
   }
 }
 
 @media screen and (max-width: 685px) {
-  .process-img-container {
-    flex-direction: column;
-  }
-
-  .sm {
-    color: black !important;
-  }
-
-  .sm-brand {
-    color: #fdc500;
-  }
-
-  #home {
-    padding-top: 200px;
-    display: block;
-  }
-  
-
   .process {
     flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+
+    .process-img-container {
+      margin: 0 auto !important;
+    }
+  }
+
+  #new .process {
+    padding-bottom: 50px;
+  }
+
+  #new .process .process-img-container .img-fluid-description {
+    top: 25px;
+  }
+
+  .process-img-container:hover {
+    transition: none;
+
+    .img-fluid {
+      -webkit-transform: none;
+      transform: none;
+      transition: none;
+
+      opacity: 0.3;
+      padding: 2rem;
+    }
+    .img-fluid-description {
+      display: block;
+      transition: none;
+    }
   }
 }

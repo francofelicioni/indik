@@ -78,3 +78,14 @@ footer .copyright a:hover {
   justify-content: flex-end;
 
 }
+
+
+
+@media screen and (max-width: 685px) { 
+
+  #footer-copyright  {
+    justify-content: center;
+  
+  }
+  
+}
