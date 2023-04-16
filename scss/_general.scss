@@ -67,6 +67,12 @@ hr {
   height: 0.5px;
   padding: 0;
   margin: 20px auto 50px auto;
+  // width: 100%;
+
+  &-home{
+    margin-top: 50px;
+    border-top: 1px solid black;
+  }
 
   &-clothes {
     border: transparent;
@@ -74,6 +80,10 @@ hr {
   }
 }
 
+
+
+
 .section-container {
+  padding: 2rem 0;
   text-align: center;
 }

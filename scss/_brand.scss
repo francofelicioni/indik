@@ -21,12 +21,13 @@
 }
 
 @media screen and (max-width: 685px) {
+
   .home-icons {
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 0px;
     .home-icons-container {
       flex-direction: column;
-      padding: 2rem 0;
+      padding: 0;
       // margin-top: -252px;
     }
   }

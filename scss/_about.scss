@@ -1,8 +1,8 @@
 #about {
-  margin: 6rem 0;
+  margin: 10rem 0;
 
   .new {
-    padding-top: 2rem ;
+    padding-top: 2rem;
     max-width: 800px;
     margin: 0 auto;
     display: flex;
@@ -22,30 +22,33 @@
 }
 
 @media screen and (max-width: 685px) {
-  .about {
-    .section-container {
-    
-      .pb-5, .py-5 { 
-        padding-bottom: 0 !important;
-      }
+  #about {
+    margin: 5rem 0;
 
-    }
-  }
-
-  .about-main-container {
-    margin: 1rem 0;
-
-    .new {
-      padding: 2rem 0;
-      flex-direction: column !important;
-
-      .about-text {
-        width: 100%;
-        padding: 1rem;
+    .about {
+      .section-container {
+        .pb-5,
+        .py-5 {
+          padding-bottom: 0 !important;
+        }
       }
     }
 
-    .new:first-child {
+    .about-main-container {
+      margin: 1rem 0;
+
+      .new {
+        padding: 2rem 0;
+        flex-direction: column !important;
+
+        .about-text {
+          width: 100%;
+          padding: 1rem;
+        }
+      }
+    }
+
+    .about-main-container :first-child {
       padding: 0rem;
     }
   }
